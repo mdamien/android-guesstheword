@@ -13,9 +13,11 @@
             android:layout_above="@+id/generate_word_button"
             android:layout_centerHorizontal="true"
             android:src="@drawable/icon_words" />
+
         <Button
             android:id="@+id/generate_word_button"
-            android:layout_width="match_parent"
+            style="@style/FancyButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/choose_word_button"
             android:layout_centerHorizontal="true"
@@ -23,7 +25,8 @@
 
         <Button
             android:id="@+id/choose_word_button"
-            android:layout_width="match_parent"
+            style="@style/FancyButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
@@ -31,7 +34,8 @@
 
         <Button
             android:id="@+id/settings_button"
-            android:layout_width="match_parent"
+            style="@style/FancyButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_below="@+id/choose_word_button"
@@ -39,7 +43,8 @@
             android:text="@string/menu_settings" />
         <Button
             android:id="@+id/help_button"
-            android:layout_width="match_parent"
+            style="@style/FancyButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_below="@+id/settings_button"

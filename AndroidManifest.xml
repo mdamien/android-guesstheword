@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.cuju.guesstheword"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -25,7 +25,7 @@
         <activity
             android:name="org.cuju.guesstheword.GameActivity"
             android:parentActivityName="org.cuju.guesstheword.MainActivity"
-            android:screenOrientation="portrait"> //TODO: This is a hack for the Bug "Activity restart on changin orientation"
+            android:screenOrientation="portrait"> //TODO: This is a hack for the Bug "Activity restart when changing orientation"
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.cuju.guesstheword.MainActivity" />
