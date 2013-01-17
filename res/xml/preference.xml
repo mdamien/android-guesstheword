@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<CheckBoxPreference android:title="@string/international_guess_title" android:key="international_guess"
+		android:summaryOn="@string/international_guess_summaryOn"
+		android:summaryOff="@string/international_guess_summaryOff"
+		android:defaultValue="false"
+		 />
+
+</PreferenceScreen>

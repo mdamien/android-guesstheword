@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Pendu</string>
+    <string name="menu_settings">Options</string> 
+    <string name="choose_word">Choisir un mot</string>
+    <string name="generate_word">Générer un mot au hasard</string>
+    <string name="ok">Valider</string>
+    <string name="cancel">Annuler</string>
+    <string name="confirm_try">Essayer</string>
+    <string name="last_try">Votre Derniére Chance</string>
+    <string name="left">essais restants</string>
+    <string name="the_word_was">Le mot était</string>
+    <string name="you_lost">Vous avez perdu!</string>
+    <string name="you_won">Vous avez gagné!</string>
+    <string name="input_empty">Vous devez entrer une lettre pour faire une tentative</string>
+    <string name="already_typed">Vous avez déjà essayé cette lettre</string>
+    <string name="yes_to_quit">Oui, quitter la partie</string>
+    <string name="stop_the_current_game">Quitter la partie ?</string>
+    <string name="international_guess_title">Mode international</string>
+    <string name="international_guess_summaryOn">Prend en compte les mots non transcrisible en caractères latin</string>
+    <string name="international_guess_summaryOff">N\'utilise que les caractères latin</string>
+    <string name="not_implemented_yet">Pas encore implémenté pour votre appareil, revenez plus tard!</string>
+    <string name="menu_help">Aide</string>
+    <string-array name="dictionnary">
+        <item>Starwriter</item>
+        <item>Libreoffice</item>
+        <item>Word</item>
+        <item>Liberté</item>
+        <item>Code</item>
+        <item>YOLO</item>
+        <item>Chérie</item>
+    </string-array>
+</resources>
