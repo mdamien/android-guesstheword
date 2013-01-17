@@ -28,8 +28,7 @@ public class GameActivity extends Activity {
 	String word = null;
 	ArrayList<String> letters = null;
 	
-	Integer tries_left = 6;
-	String joker = "*";
+	Integer tries_left = 10;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +43,8 @@ public class GameActivity extends Activity {
 		}
 
 		letters = new ArrayList<String>();
+		
+		tries_left = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString("level", "10"));
 
 		TextView word_button = (TextView) findViewById(R.id.word_to_guess);
 		boolean international_mode = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("international_guess", false);
@@ -133,11 +134,6 @@ public class GameActivity extends Activity {
 			}
 		}
 		infos.setText(string.toString());
-	}
-
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
 	}
 
 	public void endDialog(String text){

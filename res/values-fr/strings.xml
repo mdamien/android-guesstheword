@@ -3,8 +3,8 @@
 
     <string name="app_name">Pendu</string>
     <string name="menu_settings">Options</string> 
-    <string name="choose_word">Choisir un mot</string>
-    <string name="generate_word">Générer un mot au hasard</string>
+    <string name="choose_word">Jouer contre l\'ordinateur</string>
+    <string name="generate_word">Jouer contre un ami</string>
     <string name="ok">Valider</string>
     <string name="cancel">Annuler</string>
     <string name="confirm_try">Essayer</string>
@@ -22,18 +22,7 @@
     <string name="international_guess_summaryOff">N\'utilise que les caractères latin</string>
     <string name="not_implemented_yet">Pas encore implémenté pour votre appareil, revenez plus tard!</string>
     <string name="menu_help">Aide</string>
-    
-    <string-array name="dictionnary">
-        <item>Starwriter</item>
-        <item>Libreoffice</item>
-        <item>Word</item>
-        <item>Liberté</item>
-        <item>Code</item>
-        <item>YOLO</item>
-        <item>Chérie</item>
-    </string-array>
-    
-    
+
     <string name="words_in_dict_title">Mots dans le dictionnaire seulement</string>
     <string name="words_in_dict_summaryOn">Seulement les mots dans le dictionnaire sont accepté</string>
     <string name="words_in_dict_guess_summaryOff">Tout les mots sont acceptés</string>
@@ -41,6 +30,7 @@
     <string name="choose_dictionnary_summary">Dictionnaire utilisé pour vérifier les mots et pour les générer</string>
     
     <string-array name="dictionnaries">
+        <item>Auto</item>
         <item>Anglais (US)</item>
         <item>Français (FR)</item>
     </string-array>
@@ -75,4 +65,27 @@
         
         &lt;h2&gt;Amusez-vous bien!&lt;/h2&gt;
     </string>
+    
+    <string-array name="level">
+        <item>Facile (12)</item>
+        <item>Moyen (10)</item>
+        <item>Difficile (8)</item>
+        <item>Trés difficile (6)</item>
+    </string-array>
+    
+    <string name="level_title">Difficulté</string>
+    <string name="level_summary">Combien d\'erreurs sont autorisés</string>
+    
+    
+    <string-array name="dictionnaries_language">
+        <item>auto</item>
+        <item>english</item>
+        <item>french</item>
+    </string-array>
+    <string-array name="level_values">
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+        <item>6</item>
+    </string-array>
 </resources>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">The Hangman</string>
+    <string name="app_name">Hangman</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_help">Help</string>
-    <string name="choose_word">Choose a word</string>
-    <string name="generate_word">Choose a random word</string>
+    <string name="choose_word">Play against a friend</string>
+    <string name="generate_word">Play against the computer</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="confirm_try">Try</string>
     <string name="last_try">Your Last Chance</string>
     <string name="the_word_was">The word was</string>
     <string name="you_lost">You lost!</string>
-    <string name="you_won">You won!</string>
+    <string name="you_won">You win!</string>
     <string name="left">tries left</string>
     <string name="input_empty">You have to type a letter at first</string>
     <string name="already_typed">You have already tried this letter</string>
@@ -22,16 +22,6 @@
     <string name="international_guess_summaryOn">Take account of non-latin words</string>
     <string name="international_guess_summaryOff">Only use latin words</string>
     <string name="not_implemented_yet">Not implemented yet for your device, come back later!</string>
-
-    <string-array name="dictionnary">
-        <item>Starwriter</item>
-        <item>Libreoffice</item>
-        <item>Word</item>
-        <item>Keep</item>
-        <item>It</item>
-        <item>Simple</item>
-        <item>Stupid</item>
-    </string-array>
 
     <string name="about">About</string>
     
@@ -71,13 +61,31 @@
     </string>
     
     <string-array name="dictionnaries">
+        <item>Auto</item>
         <item>English (US)</item>
         <item>French (FR)</item>
     </string-array>
     
     <string-array name="dictionnaries_language">
+        <item>auto</item>
         <item>english</item>
         <item>french</item>
     </string-array>
-                      
+    
+    <string-array name="level">
+        <item>Easy (12)</item>
+        <item>Medium (10)</item>
+        <item>Hard (8)</item>
+        <item>Very hard (6)</item>
+    </string-array>
+    
+    <string-array name="level_values">
+        <item>12</item>
+        <item>10</item>
+        <item>8</item>
+        <item>6</item>
+    </string-array>
+    <string name="level_title">Difficulty</string>
+    <string name="level_summary">How many errors are allowed</string>
+    
 </resources>

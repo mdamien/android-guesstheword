@@ -1,6 +1,6 @@
 package org.cuju.guesstheword;
 
-import java.util.Random;
+import java.io.IOException;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -24,12 +24,16 @@ public class MainActivity extends Activity {
 		final Button button1 = (Button) findViewById(R.id.generate_word_button);
 		button1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				String[] dict = getResources().getStringArray(R.array.dictionnary);
-				int i = new Random().nextInt(dict.length);
-				String word = dict[i];
-				Intent intent = new Intent(MainActivity.this, GameActivity.class);
-				intent.putExtra("word", word);
-				startActivity(intent);
+				try{
+					Dictionnary dict = new Dictionnary(MainActivity.this);
+					String word = dict.randomWord(MainActivity.this);
+					Intent intent = new Intent(MainActivity.this, GameActivity.class);
+					intent.putExtra("word", word);
+					startActivity(intent);
+				}catch(IOException e){
+					Toast.makeText(getApplicationContext(), "IO problem :"+e.getMessage(), Toast.LENGTH_SHORT).show();
+				}
+
 			}
 		});
 		final Button button2 = (Button) findViewById(R.id.choose_word_button);
@@ -77,12 +81,6 @@ public class MainActivity extends Activity {
 		          }
 			}
 		});
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
 	}
 
 }

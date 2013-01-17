@@ -28,11 +28,6 @@ public class PreferenceHC extends PreferenceActivity
             addPreferencesFromResource(R.xml.preference);
         }
     }
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_help, menu);
-		return true;
-	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

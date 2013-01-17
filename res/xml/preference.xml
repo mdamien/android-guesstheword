@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+  <ListPreference     android:title="@string/level_title"
+                      android:summary="@string/level_summary"
+                      android:key="level"
+                      android:defaultValue="10"
+                      android:entries="@array/level"
+                      android:entryValues="@array/level_values" />
+                      
   <ListPreference     android:title="@string/choose_dictionnary_title"
                       android:summary="@string/choose_dictionnary_summary"
-                      android:key="choose_dictionnary"
-                      android:defaultValue="1"
+                      android:key="dictionnary"
+                      android:defaultValue="auto"
                       android:entries="@array/dictionnaries"
                       android:entryValues="@array/dictionnaries_language" /> 
 	<CheckBoxPreference android:title="@string/international_guess_title" android:key="international_guess"
@@ -11,10 +19,11 @@
 		android:summaryOff="@string/international_guess_summaryOff"
 		android:defaultValue="false"
 		 />
+	<!--  Not yet implemented
 	<CheckBoxPreference android:title="@string/words_in_dict_title" android:key="words_in_dict"
 		android:summaryOn="@string/words_in_dict_summaryOn"
 		android:summaryOff="@string/words_in_dict_guess_summaryOff"
 		android:defaultValue="false"
-		 />
+		 />-->
 
 </PreferenceScreen>
