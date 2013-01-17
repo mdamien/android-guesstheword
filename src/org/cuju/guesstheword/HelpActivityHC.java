@@ -3,6 +3,7 @@ package org.cuju.guesstheword;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,12 +12,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
+import android.text.Html;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -101,11 +104,7 @@ public class HelpActivityHC extends FragmentActivity implements
 
 		@Override
 		public Fragment getItem(int position) {
-			Fragment fragment = new DummySectionFragment();
-			Bundle args = new Bundle();
-			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
-			fragment.setArguments(args);
-			return fragment;
+			return position == 0 ? new HowToPlayFragment() : new AboutFragment();
 		}
 
 		@Override
@@ -125,31 +124,30 @@ public class HelpActivityHC extends FragmentActivity implements
 		}
 	}
 
-	/**
-	 * A dummy fragment representing a section of the app, but that simply
-	 * displays dummy text.
-	 */
-	public static class DummySectionFragment extends Fragment {
-		/**
-		 * The fragment argument representing the section number for this
-		 * fragment.
-		 */
-		public static final String ARG_SECTION_NUMBER = "section_number";
+	public static class HowToPlayFragment extends Fragment {
 
-		public DummySectionFragment() {
+		public HowToPlayFragment() {
 		}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			// Create a new TextView and set its text to the fragment's section
-			// number argument value.
-			TextView textView = new TextView(getActivity());
-			textView.setGravity(Gravity.CENTER);
-			textView.setText(Integer.toString(getArguments().getInt(
-					ARG_SECTION_NUMBER)));
-			return textView;
+			View view =  inflater.inflate(R.layout.activity_help_howtoplay, container, false);
+			((TextView)view.findViewById(R.id.howtoplay)).setText(Html.fromHtml(getResources().getString(R.string.howtoplay)));
+			return view;
 		}
 	}
+	public static class AboutFragment extends Fragment {
 
+		public AboutFragment() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+		        Bundle savedInstanceState) {
+			View view =  inflater.inflate(R.layout.activity_help_about, container, false);
+			((TextView)view.findViewById(R.id.credits)).setText(Html.fromHtml(getResources().getString(R.string.credits)));
+			return view;
+		}
+	}
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Simple Pendu</string>
+    <string name="app_name">Pendu</string>
     <string name="menu_settings">Options</string> 
     <string name="choose_word">Choisir un mot</string>
     <string name="generate_word">Générer un mot au hasard</string>
@@ -17,11 +17,12 @@
     <string name="already_typed">Vous avez déjà essayé cette lettre</string>
     <string name="yes_to_quit">Oui, quitter la partie</string>
     <string name="stop_the_current_game">Quitter la partie ?</string>
-    <string name="international_guess_title">Mode international</string>
-    <string name="international_guess_summaryOn">Prend en compte les mots non transcrisible en caractères latin</string>
+    <string name="international_guess_title">Mots non-latin</string>
+    <string name="international_guess_summaryOn">Prend en compte les mots non transcriptible en caractères latin</string>
     <string name="international_guess_summaryOff">N\'utilise que les caractères latin</string>
     <string name="not_implemented_yet">Pas encore implémenté pour votre appareil, revenez plus tard!</string>
     <string name="menu_help">Aide</string>
+    
     <string-array name="dictionnary">
         <item>Starwriter</item>
         <item>Libreoffice</item>
@@ -31,4 +32,47 @@
         <item>YOLO</item>
         <item>Chérie</item>
     </string-array>
+    
+    
+    <string name="words_in_dict_title">Mots dans le dictionnaire seulement</string>
+    <string name="words_in_dict_summaryOn">Seulement les mots dans le dictionnaire sont accepté</string>
+    <string name="words_in_dict_guess_summaryOff">Tout les mots sont acceptés</string>
+    <string name="choose_dictionnary_title">Choisir la langue du dictionnaire</string>
+    <string name="choose_dictionnary_summary">Dictionnaire utilisé pour vérifier les mots et pour les générer</string>
+    
+    <string-array name="dictionnaries">
+        <item>Anglais (US)</item>
+        <item>Français (FR)</item>
+    </string-array>
+    
+    <string name="about">à propos</string>
+    <string name="credits">
+		&lt;h3&gt;Créé par Damien Marié&lt;/h3&gt;
+		&lt;p&gt;Dand un monde d\'applications bourrées de pubs, de malwares et d\'autres cochonneries, il est votre sauveur, mais il n\'est pas seul et vous pouvez le rejoindre&lt;/p&gt;
+		&lt;p&gt;Cette application est libre et le code source est disponible à l\'adresse github.com/MDamien/android-guesstheword.
+		Le code est sous license BSD, vous êtes libre de me créditer (+1 de karma) ou pas.&lt;/p&gt;
+		&lt;p&gt;Et si quelque chose vous chagrine, même la couleur du ciel, vous pouvez me contacter à &lt;strong&gt;contact@cuju.org.&lt;/strong&gt;
+		Ou vous pouvez laissez un commentaire sur le Play Store. Pour l\'inspiration, en voilà un: \"Le ciel est bleu, les roses roses et voilà un commentaire qui peux vous plaire!\"&lt;/p&gt;
+		</string>
+    
+    <string name="howtoplay">
+        &lt;h1&gt;Pendu&lt;/h1&gt;
+        &lt;h2&gt;Principe&lt;/h2&gt;
+        &lt;p&gt;Le but du pendu est que Le Pendu trouve le mot du Juge.&lt;/p&gt;
+        &lt;p&gt;Le Juge choisit un mot secret et le pendu doit le trouver en demandant une lettre par une lettre si celle-ci est dans le mot&lt;/p&gt;
+        &lt;p&gt;Si la lettre n\'est pas dans le mot, Le Juge va continuer a construire son bucher. 
+        Mais si l lettre est dans le mot, il vous devoilera l\'emplacement des lettres ainsi deviné&lt;/p&gt;
+        &lt;p&gt;Si le mot est deviné avant la que Le Juge finisse sa construction, Le Pendu est libéré et il a gagné. Sinon, il a perdu! &lt;/p&gt;
+        &lt;h2&gt;En pratique&lt;/h2&gt;
+        &lt;p&gt;La, il n\'y a pas de meutre et de sang. Mais vous pouvez jouer plus souvent ainsi.&lt;/p&gt;
+        &lt;p&gt;Il y a deux façon de jouer: Soit contre l\'ordinateur, soit contre un ami (ou un ennemi)&lt;/p&gt;
+        &lt;p&gt;Pour jouer contre un ami, il faut choisir qui est Le Juge et qui est Le Pendu (les rôles s\'inverseront mais il faut bien commencer quelque part)&lt;br/&gt;
+        &lt;p&gt;D\'abord Le Juge choisit un mot, sans que Le Pendu le sache. Ce mot ne doit pas être trop dur et de préférence être connu du Pendu&lt;/p&gt;
+        &lt;p&gt;Maintenant c\'est le tour du Pendu. Il doit défendre sa peau, mais Le Juge ne doit pas hésiter à le prendre à parti, à le faire aller sur de mauvaises voies, à montrer qu\'il est Le Juge!&lt;/p&gt;
+        &lt;p&gt;Donc, Le Pendu le sera peut-être mais à la fin ce sera l\'heure de changer les rôles. Les morts réssucitent et vous pouvez commencer à compter les points.&lt;/p&gt;
+        &lt;p&gt;Et c\'est là  que commence le fun, battez vous pour être le champion du dictionnaire! Le français c\'est trop facile? Passez à l\'anglais!Et pourquoi pas au chinois?&lt;p&gt;
+        &lt;p&gt;Il y a de nombreuses options dans la page dédié, n\'hésitez pas à les essayer.&lt;/p&gt;
+        
+        &lt;h2&gt;Amusez-vous bien!&lt;/h2&gt;
+    </string>
 </resources>

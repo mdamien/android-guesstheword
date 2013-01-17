@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Guess The Word</string>
+    <string name="app_name">The Hangman</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_help">Help</string>
     <string name="choose_word">Choose a word</string>
@@ -33,7 +33,51 @@
         <item>Stupid</item>
     </string-array>
 
-    <string name="howtoplay">How to play</string>
     <string name="about">About</string>
-
+    
+    
+    <string name="words_in_dict_title">Only dictionnary words</string>
+    <string name="words_in_dict_summaryOn">The words are only accepted if they are in the current dictionnary</string>
+    <string name="words_in_dict_guess_summaryOff">All the words are accepted</string>
+    <string name="choose_dictionnary_title">Choose dictionnary language</string>
+    <string name="choose_dictionnary_summary">This is used in generating word and validating them</string>
+    
+    <string name="credits">
+		&lt;h3&gt;Created by Damien Marié&lt;/h3&gt;
+		&lt;p&gt;In a word of ads-blotted applications, malware-full and other quirks, he is your man: A truly devoted man who make clean and open-source application. Join him on his quest!&lt;/p&gt;
+		&lt;p&gt;This application is Free (as in Freedom and as in Free Beer) and you can find the source code at github.com/MDamien/android-guesstheword.
+		The code is under the BSD license, feel free to credit me or not.&lt;/p&gt;
+		&lt;p&gt;And if you don\'t like something (even the color of the sky), you can contact me at &lt;strong&gt;contact@cuju.org.&lt;/strong&gt;
+		Or you can leave a review like this: \"The sky is blue, the rose are rose and here is my nice review for you\"&lt;/p&gt;
+		</string>
+    
+    <string name="howtoplay">
+        &lt;h1&gt;Hangman&lt;/h1&gt;
+        &lt;h1&gt;The Principle&lt;/h1&gt;
+        &lt;p&gt;The goal of The Hangman is to find the secret word of the Judge by suggesting letters one by one to him.&lt;/p&gt;
+        &lt;p&gt;If the letter he suggests is in the word, all the same letters are displayed in their position in the word.
+            But if the letter suggested isn\'t in the word, The Judge continue to execute The Hangman.&lt;/p&gt;
+        &lt;p&gt;If the word is guessed before you The Judge completed his task, you won and you\'re free. Else, you lost. &lt;/p&gt;
+        &lt;h2&gt;In this application&lt;/h2&gt;
+        &lt;p&gt;Here, there is not murder. There is two way to play: Against the computer and against a friend&lt;/p&gt;
+        &lt;p&gt;To play against a friend (or your dad), you need to choose whom is The Judge and whom is The Hangman. &lt;/p&gt;
+        &lt;p&gt;First, The Judge choose a secret word. Not a too tricky one, a fair one. One that exists is a good rule first (you can force this rule by a setting in the application).&lt;/p&gt;
+        &lt;p&gt;Now, it\'s the turn to The Hangman to guess the word. Don\'t hesitate to tease him, to show him his life is in danger. Show him you\'re The Judge!&lt;/p&gt;
+        &lt;p&gt;So, The Hangman won\'t maybe guess the word. Or it will, but at the end you will switch the roles. And it\'s another turn! Keep track of the scores and enjoy the thrill of choosing between "k" and "f" as last letter, always funny!&lt;/p&gt;
+        
+        &lt;p&gt;There is a few settings in the settings menu, don\'t hesitate to try them out.&lt;/p&gt;
+        
+        &lt;h2&gt;Have fun!&lt;/h2&gt;
+    </string>
+    
+    <string-array name="dictionnaries">
+        <item>English (US)</item>
+        <item>French (FR)</item>
+    </string-array>
+    
+    <string-array name="dictionnaries_language">
+        <item>english</item>
+        <item>french</item>
+    </string-array>
+                      
 </resources>

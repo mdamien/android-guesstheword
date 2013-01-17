@@ -27,7 +27,8 @@ public class GameActivity extends Activity {
 
 	String word = null;
 	ArrayList<String> letters = null;
-	Integer tries_left = 0;
+	
+	Integer tries_left = 6;
 	String joker = "*";
 
 	@Override
@@ -43,7 +44,6 @@ public class GameActivity extends Activity {
 		}
 
 		letters = new ArrayList<String>();
-		tries_left = 10;
 
 		TextView word_button = (TextView) findViewById(R.id.word_to_guess);
 		boolean international_mode = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("international_guess", false);

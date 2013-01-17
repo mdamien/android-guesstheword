@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-
+  <ListPreference     android:title="@string/choose_dictionnary_title"
+                      android:summary="@string/choose_dictionnary_summary"
+                      android:key="choose_dictionnary"
+                      android:defaultValue="1"
+                      android:entries="@array/dictionnaries"
+                      android:entryValues="@array/dictionnaries_language" /> 
 	<CheckBoxPreference android:title="@string/international_guess_title" android:key="international_guess"
 		android:summaryOn="@string/international_guess_summaryOn"
 		android:summaryOff="@string/international_guess_summaryOff"
+		android:defaultValue="false"
+		 />
+	<CheckBoxPreference android:title="@string/words_in_dict_title" android:key="words_in_dict"
+		android:summaryOn="@string/words_in_dict_summaryOn"
+		android:summaryOff="@string/words_in_dict_guess_summaryOff"
 		android:defaultValue="false"
 		 />
 
