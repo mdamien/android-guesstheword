@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name="org.cuju.guesstheword.GameActivity"
-            android:parentActivityName="org.cuju.guesstheword.MainActivity" >
+            android:parentActivityName="org.cuju.guesstheword.MainActivity"
+            android:screenOrientation="portrait"> //TODO: This is a hack for the Bug "Activity restart on changin orientation"
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.cuju.guesstheword.MainActivity" />
