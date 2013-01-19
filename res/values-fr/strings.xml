@@ -3,8 +3,8 @@
 
     <string name="app_name">Pendu</string>
     <string name="menu_settings">Options</string> 
-    <string name="choose_word">Jouer contre l\'ordinateur</string>
-    <string name="generate_word">Jouer contre un ami</string>
+    <string name="choose_word">Jouer contre un ami</string>
+    <string name="generate_word">Jouer contre l\'ordinateur</string>
     <string name="ok">Valider</string>
     <string name="cancel">Annuler</string>
     <string name="confirm_try">Essayer</string>
