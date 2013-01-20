@@ -8,3 +8,5 @@ Some features:
 * And that's all folks!
 
 As you can expect, it's more of a little hobby project than a full-pledged killer application but I think *it does his job and it does it well*!
+
+Google play link: https://play.google.com/store/apps/details?id=org.cuju.guesstheword
