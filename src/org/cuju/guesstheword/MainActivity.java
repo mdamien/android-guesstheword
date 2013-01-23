@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				try{
 					Dictionnary dict = new Dictionnary(MainActivity.this);
-					String word = dict.randomWord(MainActivity.this);
+					String word = dict.randomGoodWord(MainActivity.this);
 					Intent intent = new Intent(MainActivity.this, GameActivity.class);
 					intent.putExtra("word", word);
 					startActivity(intent);

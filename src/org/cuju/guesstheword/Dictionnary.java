@@ -29,6 +29,13 @@ public class Dictionnary {
 		}
 	}
 	
+	public String randomGoodWord(Activity act) throws IOException{
+		String word = randomWord(act);
+		while(word.length() < 5){
+			word = randomWord(act);
+		}
+		return word;
+	}
 	public String randomWord(Activity act) throws IOException{
 		InputStream is = act.getAssets().open(file+".txt");
 		InputStreamReader in= new InputStreamReader(is);
